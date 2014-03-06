@@ -25,7 +25,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function(req, res){
-  res.sendfile('public/index.html');
+  res.sendfile(__dirname + '/public/index.html');
 });
 
 console.log('config ' + port);
