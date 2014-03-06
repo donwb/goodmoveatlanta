@@ -2,3 +2,17 @@
   width: 500px;
   height: 320px;
 }
+
+blockquote {
+	text-align: left;
+	font-style: italic;
+}
+
+.reference {
+
+}
+
+iframe {
+	margin-bottom: 33px;
+	margin-top: 17px;
+}

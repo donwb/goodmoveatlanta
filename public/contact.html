@@ -19,8 +19,7 @@
 
 <body>
 
-    <div class="brand">Good Move Atlanta</div>
-    <div class="address-bar">Specializing in East Cobb, West Cobb, and In-Town Atlanta</div>
+    <div id="header"></div>
 
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -41,7 +40,7 @@
                     </li>
                     <li><a href="about.html">About</a>
                     </li>
-                    <li><a href="blog.html">Blog</a>
+                    <li><a href="testimonials.html">Testimonials</a>
                     </li>
                     <li><a href="contact.html">Contact</a>
                     </li>
@@ -87,19 +86,31 @@
     </div>
     <!-- /.container -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Good Move Atlanta 2014</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/handlebars-v1.3.0.js"></script>
+    <script src="js/site.js"></script>
+
+    <script id="header-template" type="text/x-handlebars-template">
+      <div class="brand">{{title}}</div>
+      <div class="address-bar">{{tag-line}}</div>
+    </script>
+
+    <script id="footer-template" type="text/x-handlebars-template">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <p>{{footer}}</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    </script>
+
 
 </body>
 

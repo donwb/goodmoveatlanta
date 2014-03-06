@@ -28,6 +28,10 @@ app.get('/', function(req, res){
   res.sendfile(__dirname + '/public/index.html');
 });
 
+app.get('/data', function(req, res){
+  res.sendfile(__dirname + '/public/js/data.json');
+});
+
 console.log('config ' + port);
 
 http.createServer(app).listen(port, function(){
