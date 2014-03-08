@@ -25,3 +25,9 @@ iframe {
 h3 {
     font-size: 22px;
 }
+
+.phone-number {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+}
