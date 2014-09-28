@@ -103,16 +103,43 @@ var item19 = {
 
 var items = [item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19];
 
-// could use batchwriteitem, but ugh, that syntax
-_.each(items, function(i){
-	db.putItem({TableName: 'homes', Item: i}, function(err, data){
+//seedDatabase(queryDatabase);
+queryDatabase();
+
+function seedDatabase(next) {
+	// could use batchwriteitem, but ugh, that syntax
+	var count = 0;
+	_.each(items, function(i){
+		db.putItem({TableName: 'house', Item: i}, function(err, data){
+			if(err) {
+				console.log(err);
+			} else {
+				console.log(data);
+			}
+			
+			count++;
+			if(count === items.length){
+				next();
+			}
+
+		});
+	});
+}
+
+
+function queryDatabase() {
+	console.log('run query');
+
+	var query = {
+		TableName: 'house'
+	}
+
+	db.scan(query, function(err, data){
 		if(err) {
 			console.log(err);
 		} else {
 			console.log(data);
+			console.log(data.Items[0].location.S);
 		}
 	});
-})
-
-
-
+}
