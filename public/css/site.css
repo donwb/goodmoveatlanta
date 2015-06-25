@@ -31,3 +31,7 @@ h3 {
 	margin-top: 20px;
 	font-size: 30px;
 }
+
+.contact-info strong {
+	font-size: 15px;
+}
