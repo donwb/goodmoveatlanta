@@ -19,8 +19,10 @@ var port;
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
-  port = config.development.EnvConfig.port;
+  console.log("in dev");
+  port = process.env.PORT;
 } else {
+  console.log("in prod");
   port = config.production.EnvConfig.port;
 }
 
