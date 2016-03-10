@@ -6,7 +6,7 @@ module.exports = {
         },
     production: {
         EnvConfig: {
-            port: 3003
+            port: 3000
             }
         }
     };
