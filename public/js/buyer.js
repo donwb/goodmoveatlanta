@@ -14,7 +14,6 @@ function formSubmit(e) {
     var formOk = validateForm(formData);
     if (!formOk.status){
         alert(formOk.message);
-        e.preventDefault();
         return false;
     }
 
@@ -25,12 +24,16 @@ function formSubmit(e) {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function(data){
-            console.log('i am done');
+            
             console.log(data);
+            
+        },
+        error: function(err){
+            console.log(err);
         }
     });
 
-    e.preventDefault();
+    
     return false;
 
 }

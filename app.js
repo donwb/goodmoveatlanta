@@ -45,7 +45,7 @@ app.post('/api/buyerInfo', function(req, res){
   var postData = req.body;
   console.log(postData.FirstName);
 
-  res.send('done');
+  res.send({"status": "ok"});
 });
 
 console.log('config ' + port);
