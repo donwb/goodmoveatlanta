@@ -73,3 +73,14 @@ h3 {
     letter-spacing: normal;
 	margin-top: 36px;
 }
+
+.thanks-text{
+	font-size: 23px;
+    font-style: italic;
+    margin-top: 36px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

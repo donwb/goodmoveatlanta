@@ -25,7 +25,8 @@ function formSubmit(e) {
         dataType: "json",
         success: function(data){
             
-            console.log(data);
+            $('#form-content').empty();
+            $('#thanks').removeClass('hidden');
             
         },
         error: function(err){

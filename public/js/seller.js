@@ -24,6 +24,9 @@ function formSubmit(e){
         success: function(data){
             
             console.log(data);
+
+            $('#form-content').empty();
+            $('#thanks').removeClass('hidden');
             
         },
         error: function(err){
