@@ -34,6 +34,20 @@ app.get('/data', function(req, res){
   res.sendfile(__dirname + '/public/js/data.json');
 });
 
+app.get('/buyer', function(req, res){
+  res.sendfile(path.join(__dirname, '/public/buyer.html'));
+});
+
+/*
+ * API
+ */
+app.post('/api/buyerInfo', function(req, res){
+  var postData = req.body;
+  console.log(postData.FirstName);
+
+  res.send('done');
+});
+
 console.log('config ' + port);
 
 http.createServer(app).listen(port, function(){

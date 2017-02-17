@@ -1,3 +1,6 @@
+.navbar-nav {
+	font-size: 1.1em;
+}
 #contact-img {
   width: 256px;
   height: 452px;
@@ -8,8 +11,29 @@ blockquote {
 	font-style: italic;
 }
 
-.reference {
+.form-info {
+	font-size: small;
+}
 
+.form-spacer {
+	margin-top: 20px;
+}
+
+.form-subhead {
+	font-size: large;
+	margin-bottom: 30px;
+    margin-left: -20px;
+}
+
+.form-required-tag {
+	font-size: small;
+	color: red;
+}
+
+.form-text {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
 iframe {

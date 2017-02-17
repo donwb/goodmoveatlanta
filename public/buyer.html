@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Traci Browning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Traci Browning REALTOR</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="about.html">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Questionairres<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="/buyer">Buyer Questionairre</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>Confidential Buyer Questionairre</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="form-info">
+                        The completion of this form allows me to understand your home buying/selling needs/wants and helps me better know who you are so that I can provide the best service possible before, during and after your transaction.
+                        (NOTE: all information provided is confidential and is used solely for the purposes of me helping you find a home that fits your lifestyle/needs.  No information in this survey is shared with any other entity).
+                    </div>
+
+                    <div class="form-required-tag">* Required</div>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="form-spacer"></div>
+                <div class="col-md-6 col-md-offset-2">
+
+                    <form role="form">
+                        
+                        <div class="form-subhead">Getting to Know You Information</div>
+
+                        <div class="form-group">
+                            <label for="first-name">First Name:<span class="form-required-tag">&nbsp;*</span></label>
+                            <input type="text" class="form-control" id="first-name" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name:<span class="form-required-tag">&nbsp;*</span></label>
+                            <input type="text" class="form-control" id="last-name" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-address">Preferred email address:<span class="form-required-tag">&nbsp;*</span></label>
+                            <input type="email" class="form-control" id="email-address" placeholder="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Preferred phone number:<span class="form-required-tag">&nbsp;*</span></label>
+                            <input type="text" class="form-control" id="phone-number" placeholder="phone">
+                        </div>
+                        
+                        
+                        
+                        <!--Preferred contact checks-->
+                        <div class="form-text">What is your preferred method of communication? <span class="form-required-tag">&nbsp;*</span></div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" id="use-phone">Phone</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" id="use-text">Text</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" id="use-email">Email</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" id="use-other">Facebook</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-time">Best time of day to make phone contact, if applicable:</label>
+                            <input type="text" class="form-control" id="contact-time" placeholder="ex: 11:00am">
+                        </div>
+                        <div class="form-group">
+                            <label for="spouse-name">Spouse/Partner name, if applicable:</label>
+                            <input type="text" class="form-control" id="spouse-name" placeholder="">
+                        </div>
+
+                        <!--personality-->
+                        <div class="form-text">How would people who know you well describe you?</div>
+                        <div class="radio">
+                            <label><input type="radio" value="Direct" name="personality">Direct and to the point</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Outgoing" name="personality">Outgoing, social & fun-loving</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Sensitive" name="personality">Sensitive, stead, & dependable</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Analytical" name="personality">Analytical and/or perfectionist</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="most-important">What is most important for you to feel comfortable and confident in purchasing a home?</label>
+                            <textarea class="form-control" rows="3" id="most-important"></textarea>
+                        </div>
+                        
+                        <div class="form-subhead">Home Buying Information</div>
+
+                        <div class="form-group">
+                            <label for="needs">Please describe the items you NEED in a home: (if it does not have the following you will not buy the home. For instance, at least 3 bedrooms, basement)</label>
+                            <textarea class="form-control" rows="5" id="needs"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wants">Please describe the items you WANT in a home: (these are preferred options but you may still buy the home. For instance, 2 car garage, sitting room, 1 acre lot)</label>
+                            <textarea class="form-control" rows="5" id="wants"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hoods">What specific neighborhoods, communities or areas do you have in mind? What attracts you to these areas?</label>
+                            <textarea class="form-control" rows="5" id="hoods"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parameters">What, if any, specific parameters do you want or need in your next move? Ex: Special needs schools, specific areas to live because of work, etc.?</label>
+                            <textarea class="form-control" rows="5" id="parameters"></textarea>
+                        </div>
+
+                        <!--how-long-looking-->
+                        <div class="form-text">How long have you been looking for a home?</div>
+                        <div class="radio">
+                            <label><input type="radio" value="just started" name="how-long-looking">Just started looking</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="less than 3" name="how-long-looking">Less than 3 months</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="more than 3" name="how-long-looking">More than 3 months</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="other" name="how-long-looking">Other: <input type="text" id="other-how-long-looking"></label>
+                        </div>
+
+                        <!--search-techniques-->
+                        <div class="form-text">How have you gone about your search?</div>
+                        <div class="radio">
+                            <label><input type="radio" value="Online" name="search-techniques">Online searches</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Open House" name="search-techniques">Open Houses</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Agent" name="search-techniques">Agent assistance</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Other" name="search-techniques">Other: <input type="text" id="other-search-techniques"></label>
+                        </div>
+
+                        <!--home count-->
+                        <div class="form-text">How many hones have you bought and sold in the past?</div>
+                        <div class="radio">
+                            <label><input type="radio" value="first home" name="home-count">This is my first home</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="3 or less" name="home-count">3 or less homes</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="4 or more" name="home-count">4 or more homes</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="investor" name="home-count">I'm an investor and buy homes regular</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="live-now">Where do you live now?:</label>
+                            <input type="text" class="form-control" id="live-now" placeholder="city, state">
+                        </div>
+
+                        <!--rent-own-->
+                        <div class="form-text">Are you renting or do you own your current residence</div>
+                        <div class="radio">
+                            <label><input type="radio" value="Rent" name="rent-own">Rent</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Own" name="rent-own">Own</label>
+                        </div>
+
+                        <!--residence-plan-->
+                        <div class="form-text">What is your plan for your current residence (if you own it)?</div>
+                        <div class="radio">
+                            <label><input type="radio" value="Keep it" name="residence-plan">Keep it as an investment</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Sell before buying" name="residence-plan">Sell before buying</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="Sell after buying" name="residence-plan">Sell after buying</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="office-meeting">The next step is a personal, confidential meeting at my office, what days and/or times are best for you?:</label>
+                            <input type="text" class="form-control" id="office-meeting" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="property-looks">What are the best days and/or times for you to look at properties?:</label>
+                            <input type="text" class="form-control" id="property-looks" placeholder="">
+                        </div>
+
+                        <input type="submit" class="btn btn-info" id="submit-button" value="Submit Form">
+
+                    </form>
+
+
+                </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/handlebars-v1.3.0.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/buyer.js"></script>
+
+    <script id="header-template" type="text/x-handlebars-template">
+      <div class="brand">{{title}}<sup>&reg;</sup></div>
+      <div class="address-bar">{{tag-line}}</div>
+    </script>
+
+    <script id="footer-template" type="text/x-handlebars-template">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <p>{{footer}}</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48756715-1', 'goodmoveatlanta.com');
+      ga('send', 'pageview');
+
+    </script>
+
+</body>
+
+</html>
