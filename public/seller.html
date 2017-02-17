@@ -90,6 +90,11 @@
                         <div class="form-subhead">Getting to Know You Information</div>
 
                         <div class="form-group">
+                            <label for="address">Property address: <span class="form-required-tag">&nbsp;*</span></label>
+                            <textarea class="form-control" rows="3" id="address"></textarea>
+                        </div>
+
+                        <div class="form-group">
                             <label for="first-name">First Name:<span class="form-required-tag">&nbsp;*</span></label>
                             <input type="text" class="form-control" id="first-name" placeholder="">
                         </div>
@@ -123,13 +128,33 @@
                             <label><input type="checkbox" value="" id="use-other">Facebook</label>
                         </div>
 
+
+                        <div class="form-subhead">Information to help me better understand your needs</div>
+
                         <div class="form-group">
-                            <label for="contact-time">Best time of day to make phone contact, if applicable:</label>
-                            <input type="text" class="form-control" id="contact-time" placeholder="ex: 11:00am">
+                            <label for="most-important">Please tell me what is most important for you in the sale of your home</label>
+                            <textarea class="form-control" rows="4" id="most-important"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="spouse-name">Spouse/Partner name, if applicable:</label>
-                            <input type="text" class="form-control" id="spouse-name" placeholder="">
+                            <label for="motivating">What is motivating you to move at this time?</label>
+                            <textarea class="form-control" rows="4" id="motivating"></textarea>
+                        </div>
+ 
+
+
+                        <!--settled-->
+                        <div class="form-text">How soon would you like to sell and be settled in your new home?</div>
+                        <div class="radio">
+                            <label><input type="radio" value="30 Days" name="settled">30 Days</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="60 Days" name="settled">60 Days</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="More than 90 days" name="settled">More than 90 days</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="No urgency" name="settled">No urgency</label>
                         </div>
 
                         <!--personality-->
@@ -147,113 +172,36 @@
                             <label><input type="radio" value="Analytical" name="personality">Analytical and/or perfectionist</label>
                         </div>
 
-                        <div class="form-group">
-                            <label for="most-important">What is most important for you to feel comfortable and confident in purchasing a home?</label>
-                            <textarea class="form-control" rows="3" id="most-important"></textarea>
-                        </div>
-                        
-                        <div class="form-subhead">Home Buying Information</div>
+                        <div class="form-subhead">Information to help me better understand your needs</div>
 
                         <div class="form-group">
-                            <label for="needs">Please describe the items you NEED in a home: (if it does not have the following you will not buy the home. For instance, at least 3 bedrooms, basement)</label>
-                            <textarea class="form-control" rows="5" id="needs"></textarea>
+                            <label for="selling-features">What would you list as that best selling features of your home? <span class="form-required-tag">&nbsp;*</span></label>
+                            <textarea class="form-control" rows="4" id="selling-features"></textarea>
                         </div>
+
+
+                        <!--have-appraisal-->
+                        <div class="form-text">Have you had an appraisal or other research regarding your equity level in the home?</div>
+                        <div class="radio">
+                            <label><input type="radio" value="Yes" name="have-appraisal">Yes</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="No" name="have-appraisal">No</label>
+                        </div>
+
 
                         <div class="form-group">
-                            <label for="wants">Please describe the items you WANT in a home: (these are preferred options but you may still buy the home. For instance, 2 car garage, sitting room, 1 acre lot)</label>
-                            <textarea class="form-control" rows="5" id="wants"></textarea>
+                            <label for="price-range">In what price range, in the current market, would you place your home?</label>
+                            <input type="text" class="form-control" id="price-range" placeholder="">
                         </div>
+
+                        <div class="form-subhead">Bonus Question</div>
 
                         <div class="form-group">
-                            <label for="hoods">What specific neighborhoods, communities or areas do you have in mind? What attracts you to these areas?</label>
-                            <textarea class="form-control" rows="5" id="hoods"></textarea>
+                            <label for="more-info">What more should I know about you or your home to help me better serve your more-info?</label>
+                            <textarea class="form-control" rows="5" id="more-info"></textarea>
                         </div>
 
-                        <div class="form-group">
-                            <label for="parameters">What, if any, specific parameters do you want or need in your next move? Ex: Special needs schools, specific areas to live because of work, etc.?</label>
-                            <textarea class="form-control" rows="5" id="parameters"></textarea>
-                        </div>
-
-                        <!--how-long-looking-->
-                        <div class="form-text">How long have you been looking for a home?</div>
-                        <div class="radio">
-                            <label><input type="radio" value="just started" name="how-long-looking">Just started looking</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="less than 3" name="how-long-looking">Less than 3 months</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="more than 3" name="how-long-looking">More than 3 months</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="other" name="how-long-looking">Other: <input type="text" id="other-how-long-looking"></label>
-                        </div>
-
-                        <!--search-techniques-->
-                        <div class="form-text">How have you gone about your search?</div>
-                        <div class="radio">
-                            <label><input type="radio" value="Online" name="search-techniques">Online searches</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="Open House" name="search-techniques">Open Houses</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="Agent" name="search-techniques">Agent assistance</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="Other" name="search-techniques">Other: <input type="text" id="other-search-techniques"></label>
-                        </div>
-
-                        <!--home count-->
-                        <div class="form-text">How many hones have you bought and sold in the past?</div>
-                        <div class="radio">
-                            <label><input type="radio" value="first home" name="home-count">This is my first home</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="3 or less" name="home-count">3 or less homes</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="4 or more" name="home-count">4 or more homes</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="investor" name="home-count">I'm an investor and buy homes regular</label>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="live-now">Where do you live now?:</label>
-                            <input type="text" class="form-control" id="live-now" placeholder="city, state">
-                        </div>
-
-                        <!--rent-own-->
-                        <div class="form-text">Are you renting or do you own your current residence</div>
-                        <div class="radio">
-                            <label><input type="radio" value="Rent" name="rent-own">Rent</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="Own" name="rent-own">Own</label>
-                        </div>
-
-                        <!--residence-plan-->
-                        <div class="form-text">What is your plan for your current residence (if you own it)?</div>
-                        <div class="radio">
-                            <label><input type="radio" value="Keep it" name="residence-plan">Keep it as an investment</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="Sell before buying" name="residence-plan">Sell before buying</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" value="Sell after buying" name="residence-plan">Sell after buying</label>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="office-meeting">The next step is a personal, confidential meeting at my office, what days and/or times are best for you?:</label>
-                            <input type="text" class="form-control" id="office-meeting" placeholder="">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="property-looks">What are the best days and/or times for you to look at properties?:</label>
-                            <input type="text" class="form-control" id="property-looks" placeholder="">
-                        </div>
 
                         <input type="submit" class="btn btn-info" id="submit-button" value="Submit Form">
 
@@ -276,7 +224,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/handlebars-v1.3.0.js"></script>
     <script src="js/site.js"></script>
-    <script src="js/buyer.js"></script>
+    <script src="js/seller.js"></script>
 
     <script id="header-template" type="text/x-handlebars-template">
       <div class="brand">{{title}}<sup>&reg;</sup></div>

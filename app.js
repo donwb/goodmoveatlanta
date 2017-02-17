@@ -38,10 +38,21 @@ app.get('/buyer', function(req, res){
   res.sendfile(path.join(__dirname, '/public/buyer.html'));
 });
 
+app.get('/seller', function(req, res){
+  res.sendfile(path.join(__dirname, '/public/seller.html'));
+});
+
 /*
  * API
  */
 app.post('/api/buyerInfo', function(req, res){
+  var postData = req.body;
+  console.log(postData.FirstName);
+
+  res.send({"status": "ok"});
+});
+
+app.post('/api/sellerInfo', function(req, res){
   var postData = req.body;
   console.log(postData.FirstName);
 
