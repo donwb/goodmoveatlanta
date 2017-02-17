@@ -5,6 +5,8 @@ var config = require('./config');
 
 var app = express();
 
+var apiController = require('./api-controller');
+
 // all environments
 //app.set('port', process.env.PORT || 3000);
 app.use(express.favicon());
@@ -45,21 +47,52 @@ app.get('/seller', function(req, res){
 /*
  * API
  */
-app.post('/api/buyerInfo', function(req, res){
-  var postData = req.body;
-  console.log(postData.FirstName);
-
-  res.send({"status": "ok"});
-});
 
 app.post('/api/sellerInfo', function(req, res){
   var postData = req.body;
   console.log(postData.FirstName);
 
-  res.send({"status": "ok"});
+  var mongoUrl = process.env.MONGO_URL;
+  console.log(mongoUrl);
+
+  var controller = new apiController(mongoUrl);
+
+  controller.addSeller(postData, function(err, result){
+    if(!err){
+      res.send({
+        "status": "ok"
+      });
+    } else {
+      res.send({
+        "status": "error"
+      })
+    }
+    
+  });
 });
 
+app.post('/api/buyerInfo', function(req, res){
+  var postData = req.body;
+  var mongoUrl = process.env.MONGO_URL;
+
+  var controller = new apiController(mongoUrl);
+  console.log(postData);
+
+  controller.addBuyer(postData, function(err,result){
+    if(!err){
+      res.send({
+        "status": "ok"
+      });
+    } else {
+      res.send({
+        "status": "error"
+      })
+    }
+  })
+})
+
 console.log('config ' + port);
+console.log('mongo: ' + process.env.MONGO_URL);
 
 http.createServer(app).listen(port, function(){
   console.log('Express server listening on port ' + port);

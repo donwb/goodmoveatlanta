@@ -8,6 +8,7 @@
   "dependencies": {
     "aws-sdk": "^2.0.17",
     "express": "3.4.8",
+    "mongodb": "^2.2.24",
     "underscore": "^1.7.0"
   }
 }
