@@ -93,6 +93,7 @@ app.post('/api/buyerInfo', function(req, res){
 
 console.log('config ' + port);
 console.log('mongo: ' + process.env.MONGO_URL);
+console.log('mail domain: ' + process.env.MG_DOMAIN);
 
 http.createServer(app).listen(port, function(){
   console.log('Express server listening on port ' + port);
