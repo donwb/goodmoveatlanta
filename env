@@ -1,2 +1,0 @@
-export PORT := 3000
-export MONGO_URL := mongodb://tbcomuser:RealEstate1@ds153689.mlab.com:53689/tbcom
