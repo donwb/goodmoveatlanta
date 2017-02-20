@@ -1,4 +1,6 @@
 var MongoClient = require('mongodb').MongoClient;
+var mailer = require('./mailer');
+
 var connectString;
 
 var ApiController = function (cs) {
@@ -11,8 +13,16 @@ ApiController.prototype.addSeller = function(sellerInfo, callback){
         var sellerCollection = db.collection('seller');
         sellerCollection.insert(sellerInfo, function(err, result){
             db.close();
-            callback(err, result);
 
+            var m = new mailer('don@mariettahometeam.com');
+            var mailInfo = {
+                to: 'don@mariettahometeam.com',
+                subject: 'New Seller Submission',
+                text: 'New Seller submitted'
+            }
+            m.send(mailInfo, function(){
+                callback(err, result);
+            });
         });    
     });
 }
@@ -24,8 +34,16 @@ ApiController.prototype.addBuyer = function(buyerInfo, callback){
         var buyerCollection = db.collection('buyer');
         buyerCollection.insert(buyerInfo, function(err, result){
             db.close();
-            callback(err, result);
 
+            var m = new mailer('don@mariettahometeam.com');
+            var mailInfo = {
+                to: 'don@mariettahometeam.com',
+                subject: 'New Buyer Submission',
+                text: 'New Buyer submitted'
+            };
+            m.send(mailInfo, function(){
+                callback(err, result);
+            });
         });    
     });
 }
