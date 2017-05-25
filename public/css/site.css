@@ -62,7 +62,7 @@ h3 {
 
 .address-bar {
 	text-transform: none;
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -83,4 +83,32 @@ h3 {
 
 .hidden {
     display: none;
+}
+
+p.about {
+	font-size: 1.05em;
+}
+
+.header-contact-box {
+	padding: 30px 0 10px;
+	color: white;
+	font-size: 1.3em;
+	text-align: right;
+}
+
+.header-contact-strong {
+	font-weight: bold;
+}
+
+.header-content {
+	font-weight: 400;
+}
+
+.header-contact-email {
+	font-size: 1.1em;
+}
+
+hr.contact {
+	margin-top: 3px;
+	margin-bottom: 3px;
 }

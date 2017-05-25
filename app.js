@@ -44,6 +44,16 @@ app.get('/seller', function(req, res){
   res.sendfile(path.join(__dirname, '/public/seller.html'));
 });
 
+app.get('/contact', function(req, res){
+  res.sendfile(path.join(__dirname, '/public/contact.html'));
+});
+
+app.get('/testimonials', function(req, res){
+  res.sendfile(path.join(__dirname, '/public/testimonials.html'));
+});
+
+
+
 /*
  * API
  */

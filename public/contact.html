@@ -32,27 +32,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Traci Browning REALTOR</a>
+                <a class="navbar-brand" href="/">Traci Browning REALTOR</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li><a href="about.html">About</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Questionairres<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        <li><a href="/seller">Seller Questionairre</a></li>
-                        <li><a href="/buyer">Buyer Questionairre</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="testimonials.html">Testimonials</a>
-                    </li>
-                    <li><a href="contact.html">Contact</a>
-                    </li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/seller">Sellers</a></li>
+                    <li><a href="/buyer">Buyers</a></li></li>
+                    <li><a href="/testimonials">Testimonials</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -64,16 +54,35 @@
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
+                <div class="col-lg-4">
                     <hr>
-                    <h2 class="intro-text text-center">Contact <strong>Traci</strong>
+                    <h2 class="intro-text text-center"><strong>Traci</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-4">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>About</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-4">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>Contact</strong>
                     </h2>
                     <hr>
                 </div>
                 <div class="col-md-4">
-                    <img src="img/smartphone1.png" class="thumbnail" id="contact-img"/>
+                    <img class="img-responsive img-border-left" src="img/headshot.jpg" alt="">
                 </div>
-                <div class="col-md-8">
+
+                <div class="col-md-4">
+                    <p class="about">
+                        I became a Realtor after spending a decade in Advertising as a Broadcast Negotiator, which meant negotiating multi-million dollar contracts with television and radio stations and developing relationships with all parties involved. My real estate clients benefit from this negotiation experience, relationship building, as well as my experience paying attention to details and deadlines. I come from a family full of teachers so providing my clients with all of the relevant information for them to confidently make decisions about their move is one of my top goals. My clients are residential Buyers and Sellers, primarily in Marietta and Kennesaw, located in Cobb County. It is an honor each time I'm asked to help someone sell their current home and find their new home. It is one of the most important decisions that anyone will make in their life for themselves and their family. I take that responsibility very seriously. I remove the stress from the process by creating informed clients and this allows them to enjoy the process. Let me know how I can help you today.
+                    </p>
+                </div>
+                
+                <div class="col-md-4">
                     
                     <p>
                         <div class="contact-info">
@@ -136,9 +145,25 @@
     <script src="js/site.js"></script>
 
     <script id="header-template" type="text/x-handlebars-template">
-      <div class="brand">{{title}}<sup>&reg;</sup></div>
-      <div class="address-bar">{{tag-line}}</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="brand">{{title}}<sup>&reg;</sup></div>
+            <div class="address-bar">{{tag-line}}</div>
+          </div>
+          <div class="col-md-2">
+            <div class="header-contact-box">
+              <div class="header-contact-strong">Cell/Text:</div>
+              <div class="header-content">770-820-6638</div>
+              <hr class="contact">
+              <div class="header-content">Office:</div>
+              <div class="header-content">770-820-6638</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </script>
+    
 
     <script id="footer-template" type="text/x-handlebars-template">
       <footer>
