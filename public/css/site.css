@@ -104,6 +104,17 @@ p.about {
 	font-weight: 400;
 }
 
+.header-contact-office-strong {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.header-content-office {
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+
 .header-contact-email {
 	font-size: 1.1em;
 }
