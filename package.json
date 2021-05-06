@@ -10,6 +10,6 @@
     "express": "3.4.8",
     "mailgun-js": "^0.8.2",
     "mongodb": "^2.2.24",
-    "underscore": "^1.7.0"
+    "underscore": "^1.12.1"
   }
 }
